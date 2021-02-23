@@ -17,6 +17,16 @@ jobs:
       uses: actions/setup-ruby@v1
       with:
         ruby-version: 2.7.x
+    
+    - name: Run bundle install
+      working-directory: ${{env.api-dir}}
+      run: |
+        gem install bundler
+        bundle install
+    
+    - name: Build and test with rspec
+      working-directory: ${{env.api-dir}}
+      run: bundle exec rspec spec
 
     - name: Publish to RubyGems
       run: |
