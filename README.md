@@ -1,8 +1,6 @@
 # Base26
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/base26`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Ruby gem for encoding/decoding integers to/from Base26.
 
 ## Installation
 
@@ -22,7 +20,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Converting an integer into a Base26 string:
+
+```ruby
+Base26.to_alpha(12345) # => "rfu"
+```
+
+Converting a Base26 string to the represented integer:
+
+```ruby
+Base26.to_int('rfu') # => 12345
+```
 
 ## Development
 
@@ -32,5 +40,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/base26.
-
+Bug reports and pull requests are welcome on GitHub at https://github.com/sndrgrdn/base26.
