@@ -2,7 +2,7 @@
 
 require 'base26/version'
 
-class Base26
+module Base26
 
   ALPHA = 'abcdefghijklmnopqrstuvwxyz'
 
