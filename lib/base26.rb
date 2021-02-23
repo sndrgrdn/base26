@@ -26,4 +26,9 @@ class Base26
     to_alpha(quotient) + ALPHA[rest]
   end
 
+  class << self
+    alias decode to_int
+    alias encode to_alpha
+  end
+
 end

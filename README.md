@@ -2,6 +2,8 @@
 
 Ruby gem for encoding/decoding integers to/from Base26.
 
+It uses character set: `a-z` for encoding and decoding
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -24,12 +26,14 @@ Converting an integer into a Base26 string:
 
 ```ruby
 Base26.to_alpha(12345) # => "rfu"
+Base26.encode(12345) # => "rfu"
 ```
 
 Converting a Base26 string to the represented integer:
 
 ```ruby
 Base26.to_int('rfu') # => 12345
+Base26.decode('rfu') # => 12345
 ```
 
 ## Development
