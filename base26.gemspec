@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Sander Tuin']
   spec.email         = ['git@sander.garden']
 
-  spec.summary       = 'Base26 converts integer to and from base26'
-  spec.description   = 'Base26 converts integer to and from base26'
+  spec.summary       = 'Base26 encoding and decoding in Ruby'
+  spec.description   = 'Base26 encoding and decoding in Ruby'
   spec.homepage      = 'https://github.com/sndrgrdn/base26'
   spec.required_ruby_version = Gem::Requirement.new('>= 2.3.0')
 
